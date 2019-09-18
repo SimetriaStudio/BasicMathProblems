@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Math Problems</title>
+   <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+   <link rel="stylesheet" href="style-min.css">
+   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+</head>
+<body>
+   <div id="main">
+      <div class="wrapper">
+
+         <h1>Basic Math Problems:</h1>
+         <div class="selectGroup">
+            <label for="mathProb" >Step 1 – <span>Problem Max Length</span></label>
+            <select id="mathProb" class="mathProb">
+               <option value="0" disabled selected>Max Length of Problems</option>
+               <option value="2">2 Numbers</option>
+               <option value="3">3 Numbers</option>
+               <option value="4">4 Numbers</option>
+               <option value="5">5 Numbers</option>
+               <option value="6">6 Numbers</option>
+            </select>
+         </div>
+
+         <div class="selectGroup">
+            <label>Step 2 – <span>Problem Largest Number</span></label>
+            <select class="mathNum">
+               <option value="0" disabled selected>Largest Number in Problems</option>
+               <option value="10">Up to 10</option>
+               <option value="15">Up to 15</option>
+               <option value="20">Up to 20</option>
+               <option value="25">Up to 25</option>
+               <option value="30">Up to 30</option>
+               <option value="35">Up to 35</option>
+               <option value="40">Up to 40</option>
+               <option value="45">Up to 45</option>
+               <option value="50">Up to 50</option>
+            </select>
+         </div>
+
+         <div class="selectGroup">
+            <label>Step 3 – <span>Number of Problems</span></label>
+            <select class="mathCount">
+               <option value="0" disabled selected>Number of Problems</option>
+               <option value="1">1 Problems</option>
+               <option value="2">2 Problems</option>
+               <option value="3">3 Problems</option>
+               <option value="4">4 Problems</option>
+               <option value="5">5 Problems</option>
+               <option value="6">6 Problems</option>
+               <option value="7">7 Problems</option>
+               <option value="8">8 Problems</option>
+               <option value="9">9 Problems</option>
+               <option value="10">10 Problems</option>
+               <option value="11">11 Problems</option>
+               <option value="12">12 Problems</option>
+               <option value="13">13 Problems</option>
+               <option value="14">14 Problems</option>
+               <option value="15">15 Problems</option>
+               <option value="16">16 Problems</option>
+               <option value="17">17 Problems</option>
+               <option value="18">18 Problems</option>
+               <option value="19">19 Problems</option>
+               <option value="20">20 Problems</option>
+
+            </select>
+         </div>
+
+      </div>
+
+   </div>
+
+   <div class="alert">
+      <strong>WARNING: </strong>You Must First Select From Steps Above!
+   </div>
+
+   <div class="output">
+      <h1 class="mainHeading">Generated Problems:</h1>
+      <div class="outputWrapper">
+         <h1>Choose a Maximum Length of Problems and a Largest Number in the Problem from Dropdowns Above!</h1>
+         <p><strong>STEP 1: </strong> Choose how long the problem should be. Ie.: <em>"2 Numbers"</em> would output something like 4 - 2 =</p>
+         <p><strong>STEP 2: </strong> Choose the largest number to appear in the problem. Ie.: <em>"Up To 20"</em> would output numbers up to 20</p>
+      </div>
+      <a href="#" class="random">
+         Randomize
+         <i class="fas fa-reply reverse"></i>
+         <i class="fas fa-reply"></i>
+      </a>
+   </div>
+
+   <div class="saved">
+      <h1>Saved Problems:</h1>
+      <a href="#" class="clearSaved">Clear Saved</a>
+   </div>
+
+   <script src="./main.js"></script>
+
+</body>
+</html>
